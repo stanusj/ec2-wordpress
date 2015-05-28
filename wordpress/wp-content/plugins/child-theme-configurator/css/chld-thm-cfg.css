@@ -1,0 +1,568 @@
+p {
+    line-height:1.4;
+}
+a.nav-tab, a.nav-tab:focus, a.nav-tab:active {
+    outline: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    /*max-width: 9%;
+    margin:0 .25%;
+    display:block;
+    float:left;
+    line-height:1;
+    height:2em;*/
+}
+h2 .nav-tab, h2 .ctc-recent-tab {
+    font-size: 13px;
+    padding: 6px 8px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.ctc-option-panel-container {
+    position: relative;
+    min-height: 1100px;
+    width:100%;
+    overflow: auto;
+}
+.ctc-three-col {
+    -moz-columns:3;
+    -moz-column-gap:3em;
+    -webkit-columns:3;
+    -webkit-column-gap:3em;
+    columns:3;
+    column-gap:3em;
+}
+#ctc_recent_selectors ul li, #all_styles_panel ul li {
+    margin: 0;
+}
+
+#ctc_recent_selectors ul li a, #all_styles_panel ul li a {
+    text-decoration: none;
+    font-size: .8em;
+    line-height: 1.2;
+    word-wrap: break-word;
+    display: block;
+    padding: .5em;
+}
+
+#ctc_recent_selectors ul li a:hover, #ctc_recent_selectors ul li a:focus, #all_styles_panel ul li a:hover, #all_styles_panel ul li a:focus {
+    background-color: #fff;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+#view_child_options_panel, #view_parnt_options_panel {
+    white-space: pre;
+    overflow: auto;
+    font-family: monospace;
+    word-wrap: normal;
+}
+
+.ctc-option-panel {
+    visibility: hidden;
+    position: absolute;
+    /* overflow:auto; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 0 0; 
+/*    transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    -webkit-transition: width 1s ease;
+    -o-transition: width 1s ease; */
+}
+.ctc-recent-container {
+    top:0;
+    right:0;
+    position:absolute;
+    max-width: 200px;
+    width: 17%;
+    display: none;
+    overflow: auto;
+    visibility:visible;
+    left:inherit;
+    background-color: #E4E4E4;
+}
+#ctc_recent_selectors {
+    padding: 0 8px;
+}
+#live_preview_panel iframe {
+    width: 100%;
+    min-height: 1100px;
+}
+a.ctc-recent-tab {
+    float:right;
+    border:1px solid #ccc;
+    border-bottom: none;
+    background-color: #E4E4E4;
+    color: #555;
+    display: inline-block;
+    text-decoration: none;
+    margin: -1px 0 0 0;
+/*   margin: 1px 0 -1px;  */
+    box-shadow: none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow: none;
+    outline:none;
+}
+.ctc-recent-tab h3 {
+}
+
+.ctc-option-panel-active {
+    visibility: visible;
+}
+
+.ctc-swatch {
+    display: block;
+    float: left;
+    font-size: 16px;
+    padding: 0;
+    line-height: 1;
+    overflow: hidden;
+}
+
+.ctc-hidden {
+    display: none;
+}
+
+.ctc-swatch.ctc-specific {
+    min-height: 60px;
+    max-height: 100px;
+    max-width: 100px;
+    margin: 0 2% 0 0;/*color:#7f7f7f;
+    border: 1px solid #ddd;*/
+}
+
+.ctc-parent-row {
+    clear: both;
+    position: relative;
+    margin: 4px 0;
+}
+
+.ctc-parent-value {
+}
+
+.ctc-input-cell {
+    display: block;
+    float: left;
+    width: 30%;
+    max-width: 350px;
+    margin-right: 2%;
+    word-wrap: break-word;
+}
+.ctc-input-cell-wide {
+    display: block;
+    float: left;
+    width: 60%;
+    margin-right: 2%;
+}
+
+.ctc-input-cell-wide input[type="text"] {
+    width: 100%;
+}
+
+.ctc-input-cell-wide textarea {
+    width: 100%;
+    height: 200px;
+    white-space: pre;
+    overflow: auto;
+    font-family: inherit;
+    word-wrap: normal;
+}
+
+.ctc-save-input {
+}
+
+.ctc-button-cell, .ctc-input-cell.ctc-button-cell {
+    /*width: 85px;*/
+}
+
+.ctc-textarea-button-cell {
+    margin: 4px 10px 15px;
+    /*width: 85px;*/
+    text-align: right;
+    float: right;
+}
+
+.ctc-selector-link {
+}
+
+.ctc-selector-handle {
+}
+
+.ctc-rewrite-toggle {
+    font-size: 0.8em;
+    padding-left: 1em;
+    display: none;
+    outline: none;
+}
+
+.ctc-selector-container {
+    clear: both;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    position: absolute;
+    min-height: 300px;
+    width: 80%;
+    left: 15%;
+    top: 30px;
+    display: none;
+    z-index: 99999;
+    -moz-box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.ctc-selector-inner-container {
+    position: relative;
+    min-height: 300px;
+    /*max-height: 500px;*/
+    overflow: auto;
+}
+
+.ctc-status-icon {
+    /*max-width: 4%;*/
+}
+
+.ctc-status-icon.success {
+    display: block;
+    float: right;
+    position: relative;
+    height: 16px;
+    width: 16px;
+    margin: 4px;
+}
+
+.ctc-status-icon.failure {
+    display: block;
+    float: right;
+    position: relative;
+    height: 16px;
+    width: 16px;
+    margin: 4px;
+}
+
+.ctc-exit {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -13px;
+    right: -13px;
+    transition: none !important;
+    z-index: 999;
+    border: 3px solid #f9f9f9;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+}
+
+.ctc-exit:hover, .ctc-exit:active {
+    background-position: right top;
+}
+
+.ctc-query-heading {
+}
+
+.ctc-selector-row {
+    clear: both;
+    margin: 0;
+    padding: 8px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+}
+
+.ctc-input-row {
+    clear: both;
+    margin: 4px 0;
+    padding: 4px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.ctc-selector-value {
+}
+.howto.sep {
+    border-bottom: 1px solid #fff;
+    margin-bottom: .5em;
+    padding-bottom: .5em;
+}
+.ctc-selector-cell {
+    float: left;
+    width: 30%;
+    margin-right: 2%;
+}
+
+.ctc-child-input-cell {
+    display: block;
+    float: left;
+    margin-right: 2%;
+}
+
+.ctc-child-input-cell-container {
+    float: left;
+    width: 40%;
+    margin-right: 2%;
+}
+
+.ctc-child-input-cell-container label {
+    float: left;
+    clear: both;
+    width: 100px;
+    margin-right: 2%;
+}
+
+.ctc-child-input-cell input[type="text"] {
+/*width:60px;*/
+}
+
+.ctc-disabled {
+    opacity: 0.5;
+}
+
+.ctc-select {
+    max-width: 100%;
+}
+
+.ctc-child-input-cell input[type="text"].ctc-input-wide {
+    width: 200px;
+}
+
+#ctc_additional_css_label {
+    cursor: pointer;
+}
+
+#ctc_additional_css_label span {
+    white-space: nowrap;
+}
+
+.clearfix:after, .clearfix:before {
+    content: ' ';
+    display: table;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after, .clear {
+    clear: both;
+}
+
+.ie7 .clearfix {
+    zoom: 1;
+}
+
+.smaller {
+    font-size: .85em;
+}
+
+.writable {
+    color: red;
+}
+
+/* added in 1.5.4 because it is not being loaded by the admin */
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    background-color: #DADADA;
+    color: #212121;
+}
+
+.ui-menu .ui-menu-item {
+    position: relative;
+    margin: 0px;
+    padding: 3px 1em 3px 0.4em;
+    cursor: pointer;
+    min-height: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 450px;
+}
+
+/*** Added in 1.6.0 for new options ***/
+.ctc-section-toggle {
+    /*margin:0;
+    padding:0;*/
+    position: relative;
+    cursor: pointer;
+}
+
+.ctc-section-toggle:after {
+    content: "\f140";
+    font: 400 20px/1 dashicons;
+    color: #999;
+    vertical-align: bottom;
+}
+
+.ctc-section-toggle.open:after {
+    content: "\f142";
+}
+
+.ctc-section-toggle-content {
+    display: none;
+    position: relative;
+    margin:0;
+    padding:1px 0;
+}
+
+/*** Added in 1.6.0 for new Theme chooser ***/
+.ctc-theme-only {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+h3.theme-name {
+    margin: .25em 0;
+    font-size: 1.2em;
+}
+
+.ctc-theme-option {
+    max-width: 250px;
+}
+
+.ctc-theme-option-left {
+    float: left;
+    width: 40%;
+    margin-right: 5%;
+}
+
+.ctc-theme-option-right {
+    float: right;
+    width: 55%;
+    margin-right: 0;
+    font-size: .9em;
+    line-height: 1.3;
+}
+
+.ctc-theme-option-image {
+    height: auto;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+/* jquery UI widget classes */
+
+.ui-widget-content {
+    border: 1px solid #aaa;
+    background-color: #fff;
+}
+
+.ui-widget-header {
+    border: 1px solid #aaa;
+    background-color: #ccc;
+    font-weight: bold;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #d3d3d3;
+    font-weight: normal;
+    color: #555555;
+}
+
+.ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    font-weight: normal;
+    color: #212121;
+}
+
+.ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    font-weight: normal;
+    color: #212121;
+}
+
+/* jQuery UI selectmenu classes */
+
+.ui-selectmenu-menu {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.ui-selectmenu-menu .ui-menu {
+    overflow: auto;
+    max-height: 372px;
+    margin-top: 0;
+    /* Support: IE7 */
+    overflow-x: hidden;/*padding-bottom: 1px;*/
+}
+
+.ui-selectmenu-menu .ui-menu .ui-menu-item {
+    padding: 6px;
+}
+
+.ui-selectmenu-open {
+    display: block;
+}
+
+.ui-selectmenu-button {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    min-width: 200px;
+}
+
+.ui-selectmenu-button span.ui-icon {
+    right: 0.5em;
+    left: auto;
+    margin-top: -10px;
+    position: absolute;
+    top: 50%;
+}
+
+.ui-icon-triangle-1-s:before {
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font: normal 20px/1 'dashicons';
+    content: "\f140";
+}
+
+.ui-selectmenu-button span.ui-selectmenu-text {
+    text-align: left;
+    padding: 0.4em 2.1em 0.4em 1em;
+    display: block;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* get pro tab styles */
+#get_pro_panel h1 {
+    font-size:1.75em;
+    color: rgb(198, 66, 0);
+}
+#get_pro_panel h3 {
+    font-size:1.4em;
+    margin-bottom:0;
+}
+    
+#get_pro_panel p {
+    font-size:1em;
+    margin: .5em 0;
+}
+#get_pro_panel ul {
+    list-style: square;
+}
+#get_pro_panel li {
+    margin-left:2em;
+}
+#get_pro_panel h3 a {
+    display: inline-block;
+    padding:5px 10px;
+    background-color: rgb(198, 66, 0);
+    color: #fff;
+    text-decoration: none;
+}
+
+#get_pro_panel h3 a:hover {
+    background-color: #FF902E;
+    color: #fff;
+}
+#get_pro_panel img {
+    max-width: 100%;
+    height: auto;
+}

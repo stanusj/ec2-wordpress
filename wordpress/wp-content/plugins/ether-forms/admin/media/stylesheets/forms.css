@@ -1,0 +1,38 @@
+.builder-location-wrapper { margin-top: -6px; }
+
+.builder-widget-icon-form { background-image: url(../images/form-48px.png); }
+.builder-widget-icon-form-text-input { background-image: url(../images/form-text-input-48px.png); }
+.builder-widget-icon-form-hidden-input { background-image: url(../images/form-text-hidden-48px.png); }
+.builder-widget-icon-form-checkbox { background-image: url(../images/form-checkbox-48px.png); }
+.builder-widget-icon-form-radio{ background-image: url(../images/form-radio-48px.png); }
+.builder-widget-icon-form-checkbox-group { background-image: url(../images/form-checkbox-group-48px.png); }
+.builder-widget-icon-form-select { background-image: url(../images/form-select-48px.png); }
+.builder-widget-icon-form-textarea { background-image: url(../images/form-textarea-48px.png); }
+.builder-widget-icon-form-email { background-image: url(../images/form-email-48px.png); }
+.builder-widget-icon-form-url { background-image: url(../images/form-url-48px.png); }
+.builder-widget-icon-form-address { background-image: url(../images/form-address-48px.png); }
+.builder-widget-icon-form-file { background-image: url(../images/form-file-48px.png); }
+.builder-widget-icon-form-numeric { background-image: url(../images/form-numeric-48px.png); }
+.builder-widget-icon-form-date { background-image: url(../images/form-date-48px.png); }
+.builder-widget-icon-form-time { background-image: url(../images/form-time-48px.png); }
+.builder-widget-icon-form-phone-number { background-image: url(../images/form-phone-number-48px.png); }
+.builder-widget-icon-form-zip-code { background-image: url(../images/form-zip-code-48px.png); }
+.builder-widget-icon-form-recaptcha { background-image: url(../images/form-recaptcha-48px.png); }
+
+.ether-form-entry dt { font-weight: bold; }
+.ether-form-entry dt:after { content: ':'}
+.ether-form-entry dd { margin: 0; padding: 5px 0px 15px;}
+
+.ether-10 { width: 10% !important; float: left; }
+.ether-20 { width: 20% !important; float: left; }
+.ether-33 { width: 33% !important; float: left; }
+.ether-40 { width: 40% !important; float: left; }
+.ether-50 { width: 50% !important; float: left; }
+.ether-60 { width: 60% !important; float: left; }
+.ether-66 { width: 66% !important; float: left; }
+.ether-70 { width: 70% !important; float: left; }
+.ether-80 { width: 80% !important; float: left; }
+.ether-90 { width: 90% !important; float: left; }
+.ether-100 { width: 100% !important; float: left; }
+
+.type-form-entry span.view { display: none; }

@@ -1,0 +1,93 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+.home-widget h3 {
+  	line-height: 22px;
+}
+
+.home-widget a:hover {
+  	
+}
+
+
+.ultimatum-menu .nav-holder> .ultimatum-menu-nav > li+li {
+	border-left: 1px solid red;
+}
+
+p.home-tagtxt {
+  	font-family: 'Oswald', sans-serif;
+  	font-size: 26px;
+  	line-height: 30px;
+  	color: #999;
+  	text-align: center;
+}  
+  
+.back {
+    font-size: 20px;
+    text-align: center;
+    background: rgba(73,108,144,0.2);
+}
+  
+.back a {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+
+
+ul.footer-bullet {
+  	list-style-type: square;
+  	
+}
+
+#nav_menu-2  {
+	margin-top: 20px;
+  	background-color: #ededed;
+  	padding: 10px 15px;
+  
+}
+
+
+h1.super-title {
+  	font-family: 'Oswald', sans-serif;	
+	float: right;
+  	margin-right: 0px;
+  	font-size: 35px;
+  	line-height: 48px;
+  	color: white;
+  	padding-top: 30px;
+  	margin-bottom: -5px;
+}
+
+
+
+ul#menu-practice-areas.menu {
+	list-style-type: square;
+}
+ul#menu-practice-areas.menu li a:hover { 
+  	color: red;
+	text-decoration: none;}
+
+.practice-area-body .post-header {padding-top: 50px;}
+
+#mni-membership-635622058775279360 {
+  	width: 70%;
+  	height: auto;
+}
+
+#mni-membership-635622058775279360 .mn-widget-member-name {
+  	font-size: 12px;
+}
+
+@media only screen and (max-width: 700px) {
+	p.home-tagtxt {font-size:22px; line-height: 24px;}
+     
+}
+
+@media only screen and (max-width: 400px) {
+	p.home-tagtxt {font-size:18px; line-height: 20px;}
+     
+}
+
+
